@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    
+    nav {
+        display: none;
+    }
+
+    .main {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+}

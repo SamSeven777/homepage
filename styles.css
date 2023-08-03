@@ -57,38 +57,30 @@ section {
     border-bottom: 3px solid #222;
 }
 
+.gallery {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.figure {
-    margin: 5px;
-    width: min-content;
+.gallery .figure {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
     border: 1px solid #777;
-    float: left;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.figure img {
-    height: 250px;
-    width: auto;
-    object-fit: contain;
-}
-
-.image-container {
+.gallery .figure .image-container {
     display: flex; 
     flex-direction: row;
+    max-width: 100%;
 }
 
-.figure p {
-    margin-left: 8px;
-    text-align: left;
+.gallery .figure p {
     font-size: 12px;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .icon {

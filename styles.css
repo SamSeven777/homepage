@@ -70,27 +70,27 @@ section {
     
 }
 
-    .gallery .figure {
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 15px;
-        border: 1px solid #777;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.gallery .figure {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+    border: 1px solid #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
-    .gallery .figure .image-container {
-        display: flex; 
-        flex-direction: row;
-        max-width: 100%;
-    }
+.gallery .figure .image-container {
+    display: flex; 
+    flex-direction: row;
+    max-width: 100%;
+}
 
 
-    .gallery .figure p {
-        font-size: 12px;
-    }
+.gallery .figure p {
+    font-size: 12px;
+}
 
 
 .activity {

@@ -4,7 +4,6 @@
     <head>
         <title>Homepage - Qi, Runyu</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 950px)">
         <link rel="stylesheet" href="styles.css">
     </head>
 
@@ -30,12 +29,13 @@
             </section>
 
             <section id="about">
-                <h2>ABOUT ME <a href="files/RunyuQi_CV_2024.pdf" download style="font-weight:normal;font-size:15px;">Download CV</a></h2>
-                <h3>EDUCATION</h3>
-                <p>Master of Science, Materials Science and Engineering, <span style="color:#13294b;background-color:#ff5f05;">University of Illinois Urbana-Champaign</span>, 2023 - Present</p>
-                <p>Bachelor of Engineering, Materials Science and Engineering, <span style="color:#fff;background-color:#660874;">Tsinghua University</span>, 2019 - 2023</p>
-                <hr>
-                <h3>RESEARCH ATTEMPTS</h3>
+            <h2>ABOUT ME <a href="files/RunyuQi_CV_2024.pdf" download style="font-weight:normal;font-size:15px;">Download CV</a></h2>
+            <h3>EDUCATION</h3>
+            <p>Master of Science, Materials Science and Engineering, <span style="color:#13294b;background-color:#ff5f05;">University of Illinois Urbana-Champaign</span>, 2023 - Present</p>
+            <p>Bachelor of Engineering, Materials Science and Engineering, <span style="color:#fff;background-color:#660874;">Tsinghua University</span>, 2019 - 2023</p>
+            <hr>
+            <h3>RESEARCH ATTEMPTS</h3>
+            <div class="research">
                 <h4>Detection of Perchlorate and TNT using <abbr title="Raman Spectroscopy">SERS</abbr> and Electrochemical Techniques</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -49,7 +49,9 @@
                             <img style="width: 315px;" src="images/figures/TNT.png">
                             <p>Detection of perchlorate(above) and TNT(below)</p>
                     </div>
-                </div>        
+                </div>
+            </div>
+            <div class="research">
                 <h4>Nano ZrO<sub>2</sub> Reinforced Dental <abbr title="Poly(methyl methacrylate)">PMMA</abbr>-Based Resin for Stereolithography Additive Manufacturing</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -63,7 +65,8 @@
                         <p>SEM images of the bending fracture surface (left: 500x, right: 1000x)</p>
                     </div>
                 </div>
-
+            </div>
+            <div class="research">
                 <h4>A Review on <abbr title="Polydimethylsiloxane">PDMS</abbr>-based Electronic Skin and Self-healing Property</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -73,7 +76,8 @@
                         <p>Academic review poster</p>
                     </div>
                 </div>
-                    
+            </div>
+            <div class="research">   
                 <h4><abbr title="Finite Element Method">FEM</abbr> Simulation of Autoclave and Development of Scripts & Extensions</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -87,7 +91,8 @@
                         <p>Automatic modeling and simulation scripts and extensions</p>
                     </div>
                 </div>            
-
+            </div>
+            <div class="research">
                 <h4>3D Printing of Glass Fiber Reinforced Plastic by Stereolithography</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -101,7 +106,8 @@
                         <p>SEM images of the tensile fracture surface (left: blank control, right: fiber-reinforced )</p>
                     </div>
                 </div>
-
+            </div>
+            <div class="research">
                 <h4>Development of Metallic Glass Full-spectrum Visible-light Filter</h4>
                 <div class="gallery">
                     <div class="figure">
@@ -109,11 +115,10 @@
                         <p>Metallic glass with different colors, based on the work of <a href="https://doi.org/10.1007/s40843-020-1628-6">Zhang. Y. et al.</a>.</p>
                     </div>
                 </div>
+            </div>
 
-                <h4></h4>
-
-                <hr>
-                <h3>ACTIVITIES</h3>
+            <hr>
+            <h3>ACTIVITIES</h3>
                 <div class="activity">
                     <img src="images/icons/Olympic.webp">
                     <div class="description">
@@ -163,5 +168,29 @@
             <p>Copyright &copy; 2024 by Qi, Runyu. All Rights Reserved.</p>
         </footer>
 
+        <a href="#" class="back-to-top">Back to Top</a>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Show/hide "Back to Top" button
+            window.onscroll = function() {
+                var backToTop = document.querySelector('.back-to-top');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTop.style.display = "block";
+                } else {
+                    backToTop.style.display = "none";
+                }
+            };
+
+        </script>
     </body>
 </html>
